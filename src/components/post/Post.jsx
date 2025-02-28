@@ -26,7 +26,7 @@ export default function Post({ post }) {
       <div className="postWrapper">
         <div className="postTop">
           <div className="postTopLeft">
-            <img className="postProfileImg" src={"user" ? user.profilePicture : "Unknown user"} />
+            <img className="postProfileImg" src={user ? user.profilePicture : "Unknown user"} />
             <span className="postUsername">{user ? user.username : "Unknown user"}</span>
             <span className="postDate">{post.date}</span>
           </div>
